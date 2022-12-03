@@ -1,0 +1,15 @@
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--white-bg-color);
+}
+
+.button {
+    border-radius: 4px;
+    cursor: pointer;
+}
