@@ -63,7 +63,7 @@
 
 
 
-.mobile-menu__link--current link{
+.mobile-menu__link--current{
     color: var(--accent-color);
 }
 
@@ -76,6 +76,10 @@
     
     color: var(--accent-color);
 
+    @include mobile{
+    font-size: 34px;
+    }
+
 }
 
 .mobile-contacts__email {
@@ -85,6 +89,15 @@ line-height: 1.17;
 letter-spacing: 0.02em;
 
 color: var(--primery-text-color);
+
+@include mobile {
+    font-size: 24px;
+    }
+
+    &:hover,
+    &:focus {
+color: var(--accent-color);
+    }
 }
 
 .mobile-social__list{
@@ -101,6 +114,10 @@ line-height: 1.22;
 letter-spacing: 0.02em;
 
 color: var(--accent-color);
+
+@include mobile {
+    font-size: 18px;
+}
 }
 
 
@@ -108,7 +125,7 @@ color: var(--accent-color);
     margin-top: 32px;
 }
 
- .mobile-social__item::after {
+ .mobile-social__item:not(:last-child)::after {
       content: "|";
       width: 2px;
       height: 4px;

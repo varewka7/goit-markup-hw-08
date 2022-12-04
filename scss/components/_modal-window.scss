@@ -13,12 +13,13 @@
 
     @include mobile {
         width: 450px;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
     }
 
     @include desktop {
         width: 528px;
-        top: 50%;
-        transform: translate(-50%, -50%) scale(1);
+       
 
     }
 }
