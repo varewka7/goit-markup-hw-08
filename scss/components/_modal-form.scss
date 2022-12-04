@@ -81,15 +81,20 @@
 
 
 .modal-check-field-wrapper {
-    display: flex;
     font-weight: 400;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.03em;
         color: var(--primery-text-color);
         margin-bottom: 30px;
+        text-align: center;
+        
+
+    @include mobile {
+        display: flex;
         align-items: center;
         justify-content: center;
+    }
 
     @include desktop{
    
