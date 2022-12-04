@@ -82,15 +82,24 @@
 
 .modal-check-field-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: var(--primery-text-color);
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+
+    @include desktop{
+   
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.01em;
-    margin-bottom: 30px;
     user-select: none;
 
     color: var(--primery-text-color);
+    }
 }
 
 .modal-form-own-check {
@@ -121,12 +130,18 @@
 
 
 .modal-form-own-check-link {
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
-
+    
     color: var(--accent-color);
+
+    @include desktop{
+    font-size: 14px;
+    line-height: 1.71;
+    }
+    
 }
 
 .modal-form-btn {

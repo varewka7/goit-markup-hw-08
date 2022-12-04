@@ -16,4 +16,10 @@ justify-content: center;
     fill: var(--black-text-color);
     width: 40px;
     height: 40px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover ,
+    &:focus  {
+        fill: var(--accent-color);
+    }
 }
