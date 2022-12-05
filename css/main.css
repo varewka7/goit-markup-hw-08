@@ -426,10 +426,6 @@ body {
   height: 100%;
 }
 
-.mobile-menu__nav {
-  margin-bottom: auto;
-}
-
 .mobile-menu__menu-btn {
   position: absolute;
   top: 10px;
