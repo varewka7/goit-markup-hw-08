@@ -200,10 +200,17 @@ body {
 }
 
 .modal-form-own-check {
+  position: relative;
+  top: 3px;
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
   cursor: pointer;
   margin-right: 9px;
+}
+@media screen and (min-width: 480px) {
+  .modal-form-own-check {
+    top: 0;
+  }
 }
 .modal-form-check:focus + .modal-form-own-check {
   outline: 2px solid var(--black-text-color);
@@ -300,7 +307,7 @@ body {
   background-color: var(--white-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  top: 20px;
+  top: 30px;
   left: 50%;
   transform: translateX(-50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
