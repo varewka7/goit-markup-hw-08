@@ -189,19 +189,33 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list list">
             <li class="team__list-item">
-              <img
-                srcset="
-                  ./images/index-team/team1-480-@1x.jpg  450w,
-                  ./images/index-team/team1-480-@2x.jpg  900w,
-                  ./images/index-team/team1-768-@1x.jpg  354w,
-                  ./images/index-team/team1-768-@2x.jpg  708w,
-                  ./images/index-team/team1-1200-@1x.jpg 270w,
-                  ./images/index-team/team1-1200-@2x.jpg 540w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                src="./images/index-team/team1-480-@1x.jpg"
-                alt="Дизайнер"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-team/team1-1200-@1x.jpg 1x,
+                    ./images/index-team/team1-1200-@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-team/team1-768-@1x.jpg 1x,
+                    ./images/index-team/team1-768-@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-team/team1-480-@1x.jpg 1x,
+                    ./images/index-team/team1-480-@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/index-team/team1-480-@1x.jpg"
+                  alt="Дизайнер інтерфейсу користувача"
+                />
+              </picture>
 
               <div class="team__list-description">
                 <h3 class="team__list-title">Ігор Дем'яненко</h3>
@@ -259,19 +273,33 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img
-                srcset="
-                  ./images/index-team/team2-480-@1x.jpg  450w,
-                  ./images/index-team/team2-480-@2x.jpg  900w,
-                  ./images/index-team/team2-768-@1x.jpg  354w,
-                  ./images/index-team/team2-768-@2x.jpg  708w,
-                  ./images/index-team/team2-1200-@1x.jpg 270w,
-                  ./images/index-team/team2-1200-@2x.jpg 540w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                src="./images/index-team/team2-480-@1x.jpg"
-                alt="Розробник інтерфейсу"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-team/team2-1200-@1x.jpg 1x,
+                    ./images/index-team/team2-1200-@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-team/team2-768-@1x.jpg 1x,
+                    ./images/index-team/team2-768-@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-team/team2-480-@1x.jpg 1x,
+                    ./images/index-team/team2-480-@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/index-team/team2-480-@1x.jpg"
+                  alt="Дизайнер інтерфейсу користувача"
+                />
+              </picture>
 
               <div class="team__list-description">
                 <h3 class="team__list-title">Ольга Рєпіна</h3>
@@ -329,19 +357,33 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img
-                srcset="
-                  ./images/index-team/team3-480-@1x.jpg  450w,
-                  ./images/index-team/team3-480-@2x.jpg  900w,
-                  ./images/index-team/team3-768-@1x.jpg  354w,
-                  ./images/index-team/team3-768-@2x.jpg  708w,
-                  ./images/index-team/team3-1200-@1x.jpg 270w,
-                  ./images/index-team/team3-1200-@2x.jpg 540w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                src="./images/index-team/team3-480-@1x.jpg"
-                alt="Маркетолог"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-team/team3-1200-@1x.jpg 1x,
+                    ./images/index-team/team3-1200-@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-team/team3-768-@1x.jpg 1x,
+                    ./images/index-team/team3-768-@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-team/team3-480-@1x.jpg 1x,
+                    ./images/index-team/team3-480-@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/index-team/team3-480-@1x.jpg"
+                  alt="Дизайнер інтерфейсу користувача"
+                />
+              </picture>
 
               <div class="team__list-description">
                 <h3 class="team__list-title">Микола Тарасов</h3>
@@ -399,19 +441,33 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img
-                srcset="
-                  ./images/index-team/team4-480-@1x.jpg  450w,
-                  ./images/index-team/team4-480-@2x.jpg  900w,
-                  ./images/index-team/team4-768-@1x.jpg  354w,
-                  ./images/index-team/team4-768-@2x.jpg  708w,
-                  ./images/index-team/team4-1200-@1x.jpg 270w,
-                  ./images/index-team/team4-1200-@2x.jpg 540w
-                "
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
-                src="./images/index-team/team4-480-@1x.jpg"
-                alt="Дизайнер інтерфейсу користувача"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-team/team4-1200-@1x.jpg 1x,
+                    ./images/index-team/team4-1200-@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-team/team4-768-@1x.jpg 1x,
+                    ./images/index-team/team4-768-@2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/index-team/team4-480-@1x.jpg 1x,
+                    ./images/index-team/team4-480-@2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./images/index-team/team4-480-@1x.jpg"
+                  alt="Дизайнер інтерфейсу користувача"
+                />
+              </picture>
 
               <div class="team__list-description">
                 <h3 class="team__list-title">Михайло Єрмаков</h3>
